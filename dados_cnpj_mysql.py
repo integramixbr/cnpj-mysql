@@ -331,6 +331,7 @@ CREATE  INDEX idx_empresas_cnpj_basico ON empresas (cnpj_basico);
 CREATE  INDEX idx_empresas_razao_social ON empresas (razao_social);
 CREATE  INDEX idx_estabelecimento_cnpj_basico ON estabelecimento (cnpj_basico);
 CREATE  INDEX idx_estabelecimento_cnae_fiscal ON estabelecimento (cnae_fiscal);
+CREATE  INDEX idx_estabelecimento_cnae_uf_municipio ON estabelecimento (cnae_fiscal, uf, municipio);
 
 CREATE INDEX idx_socios_original_cnpj_basico
 ON socios_original(cnpj_basico);
